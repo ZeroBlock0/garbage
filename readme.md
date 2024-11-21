@@ -1,1 +1,4 @@
-conda activate tf-gpu
+
+# 猫狗图像分类项目
+
+## 环境配置
