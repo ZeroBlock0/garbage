@@ -2,9 +2,34 @@
 
 ## 环境配置
 
-bash
-激活 conda 环境
-conda activate tf-gpu
+### 安装步骤
+
+1. **安装 Conda**
+   - 下载 [Miniconda](https://docs.conda.io/en/latest/miniconda.html) 或 [Anaconda](https://www.anaconda.com/download)
+   - 按照安装向导完成安装
+
+2. **创建环境**
+   ```bash
+   # 使用 environment.yml
+   conda env create -f environment.yml
+
+   # 或使用 requirements.txt
+   conda create -n tf-gpu python=3.10
+   conda activate tf-gpu
+   pip install -r requirements.txt
+   ```
+
+3. **激活环境**
+   ```bash
+   conda activate tf-gpu
+   ```
+
+### 环境文件说明
+
+- `environment.yml`: Conda 环境完整配置
+- `requirements.txt`: 依赖包列表
+
+### 快速开始
 
 ## 项目结构
 
